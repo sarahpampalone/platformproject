@@ -1,31 +1,122 @@
-h1 {
-    font-size: 2.8em;
-    font-weight: bold;
-    color: white;
-    text-align: center;
+main{ 
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient( to right top, #acccfd, #0df1d3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-ul {
-    list-style-type: none;
+ .glass{
+    background-color: rgb(235, 148, 101);
+    min-height: 80vh;
+    width: 60%; 
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(2rem);
+ }
+    .circle1,.circle2{
+    background-color: white;
+    background: linear-gradient(to left bottom, rgba(255, 255, 255, 0.8), rgba(255,255,255,0.3));
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+}
+.circle1{
+    top: 5%;
+    right:10%
+}
+.circle2{
+    bottom: 5%;
+    left: 10%;
+}
+/* list of options*/
+.cards{
+align-items: center;
+justify-content:center;
+display:flex; 
+margin: 9rem 3rem;
+
+}
+.cards li{ 
+ padding:2rem; 
+ width: 90%; 
+align-items: center;
+display: flex;
+flex-direction: column;
+background: linear-gradient(to left bottom, rgba(255, 255, 255, 1), rgba(255,255,255,0.4));
+border-radius: 2rem;
+box-shadow: 6px 6px 20px;
+color: rgb(21, 64, 107);
 }
 
-a {
-    color: blue;
-}
+/* the linked pages*/ 
 
 body {
+    background: linear-gradient( to right top, #acccfd, #0df1d3);
     font-size: 1em;
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 1000px;
-    margin: 0 auto;
 }
 
-#border {
+
+h1{ 
+    color:#294466; 
+    font-weight: 50;
+    font-size: 5rem;
+    opacity: .8;
+    z-index: 5;
+    font-family: "Vina Sans", sans-serif;
+    align-items: center;
+
+}
+textbox{ 
+    margin-left: 35%;  
+}
+
+.instructions{ 
+    margin: 2rem 17rem;
+    text-align: center;
+    background: linear-gradient(to left bottom, rgba(255, 255, 255, 1), rgba(255,255,255,0.4));
+    border-radius: 2rem;
+    z-index: 4;
+    font-weight: 200;
+}
+
+.circle3,.circle4{
+    background-color: white;
+    background: linear-gradient(to left bottom, rgba(255, 255, 255, 0.8), rgba(255,255,255,0.3));
+    height: 12rem;
+    width: 12rem;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+}
+.circle3{
+    top: 25%;
+    right:15%
+}
+.circle4{
+    bottom: 25%;
+    left: 10%;
+}
+
+h4{ 
+    margin-left: 40%;
+    font-size: 5rem;
+    font-weight:100;
+    font-family: "Vina Sans", sans-serif;
+    color:#294466
+    
+}
+
+
+/*#border {
     border-style: solid;
 }
 
@@ -33,11 +124,11 @@ body {
     background-color: black;
     border-top: solid;
     border-bottom: solid;
-}
+}*/ 
 
-nav{
+/*nav{
     clear:left;
-    padding:2em;
+    padding:em;
     margin-left: 5em;
 }
 nav ul li {
@@ -48,30 +139,31 @@ nav ul li {
 nav ul li a {
     padding: 0.25em 1em;
     text-decoration: none; /* no underline */
-    background-color: #EBF5FF; /* pale bluish white */
-    color: #4312AE; /* dark blue */
+   /* background-color: #EBF5FF; 
+    color: #4312AE; 
     border: 2px solid black;
-    border-top-left-radius: 1em 1em; /* rounded corner! */
-    border-top-right-radius: 1em 1em; /* another rounded corner! */
-}
+    border-top-left-radius: 1em 1em; 
+    border-top-right-radius: 1em 1em; 
+}*/
 
-nav ul li a:hover, nav ul li a:focus {
+/*nav ul li a:hover, nav ul li a:focus {
     color: black;
     background-color: white;
     font-weight: bold;
-}
+    
+}*/ 
 
-table {
+/*table {
     border-style: solid;
     margin: 5%;
     margin-bottom: 20%;
-}
+}*/
 
 caption {
     font-size: 2em;
 }
     
-td, th {
+/*td, th {
     padding: .5em;
     padding-right:5em;
 }
@@ -82,7 +174,7 @@ li.jsList {
 }
 
 button.jsFun {  
-    margin-left: 15%;
+  margin-left: 15%;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -97,8 +189,11 @@ table#bankTable caption {
 }
 
 h2#jsDom {
-  text-align: center;
-  margin-bottom: 5%;
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  color: #294466;
+  padding: 2%;
+
 }
 
 button.bankAction {
